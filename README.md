@@ -6,5 +6,5 @@ I have the examples in C++ and Java but here I would probably add mostly Java as
 Since this is for showing examples and learning, I tried to make a single file that has all the interface and anstract classes in that, so following the concept becomes easier and one does not have to go through multiple files.
 If you have any questions please contact me.
 
-# Example of Composite Pattern added
+## Example of Composite Pattern added
 This example is for a book that has hierachy of chapters. You can add sub-chapters to each chapter that the main book itself is also a chapter class. Each chapter class (and also the book) has a method that shows all the sub-chapters. So after adding all the chapters and their sub-chapters, you can run the show method to see the outline of the book.
