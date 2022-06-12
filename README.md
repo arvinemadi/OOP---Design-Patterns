@@ -18,3 +18,9 @@ Using this approach gives a lot of flexibility in defining and modifying objects
 ## Example of Observer Pattern added
 In this example, you can define a stock as being a observable class. This observerable class, contain a list of observers (that with a method you can add or remove observers). When the value of the stock is changed (here through a method setValue, but could be implemented differently), the observable 'stock' object will notify its list of observers by calling its Notify() method, and this Notify method would go over the obeservers list and call their update method. When the observer update() method is called, it will pull the new value of the stock by calling the getValue method of the observable and updates its state. 
 This would help a lot that the observers, dont miss a change of the value of the object that they care about and dont need to constantly check in interval times. They will be notified of the change as soon as it has been changed.
+
+## Example of Template method
+Very useful and common method. In this example it has been used for solving leetcode 1396. Design Underground System.
+In this interesting problem we want to searh for a trip in O(1). A trip is define by two parts: startStation and endStation. So in principle we want to search a hashtable with two keys. This is implemented by a class using template method that takes the two parts and overrides their hashCode method and creates a new hashCode for the combined Key object. To be able to search in the hashmap the equal method has also been overriden.
+The same method is also used for Value class. Although hashCode() and equals() methods are not needed.
+Template T is used in this solution so that the method can be applied to other problems when searching with two keys are needed.  
