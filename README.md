@@ -28,4 +28,4 @@ Template T is used in this solution so that the method can be applied to other p
 ## Example of Proxy Pattern
 Proxy pattern is used when for example creating an object could be computationally or memory expensive. Or when permission cannot be directly granted to an object and first need some authentication. In this example, a data_generator for Fibonacci series is created through the proxy and user contact that only through the proxy. The proxy has an Fibonacci data_generator. Both proxy and concrete object of Fibonacci are extended from the same data_generator abstract class.
 
-<img src="media/Proxy_Pattern.PNG" width="500" height="300" />
+<img src="media/Proxy_Pattern.PNG" width="350" height="200" />
