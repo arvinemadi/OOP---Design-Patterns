@@ -26,5 +26,6 @@ The same method is also used for Value class. Although hashCode() and equals() m
 Template T is used in this solution so that the method can be applied to other problems when searching with two keys are needed.  
 
 ## Example of Proxy Pattern
-Proxy pattern is used when for example creating an object could be computationally or memory expensive. Or when permission cannot be directly granted to an object and first need some authentication. In this example, a data_generator for Fibonacci series is created through the proxy and user contact that only through the proxy. The proxy has an Fibonacci data_generator. Both proxy and concrete object of Fibonacci are extended from the same data_generator abstract class
+Proxy pattern is used when for example creating an object could be computationally or memory expensive. Or when permission cannot be directly granted to an object and first need some authentication. In this example, a data_generator for Fibonacci series is created through the proxy and user contact that only through the proxy. The proxy has an Fibonacci data_generator. Both proxy and concrete object of Fibonacci are extended from the same data_generator abstract class.
+
 <img src="media/Proxy_Pattern.PNG" width="700" height="400" />
