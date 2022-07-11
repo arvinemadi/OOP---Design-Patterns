@@ -53,3 +53,11 @@ These three methods are all implemented in concrete classes of the states.
 
 <img src="media/State_Pattern.PNG" width="450" height="510" />
 
+## Example of Factory Method
+Factory Patterns (Factory Method and Abstract Factory Pattern) is used to control the creation of objects. For example if we want to simply count how many of an object is created or if we want to have some statistic of properties of the objects created or we want to store them somewhere. Sometimes also it may be difficult to directly create them.
+
+In this simple example, in a game there are Zombie objects that need to be created. For example a user may call new zombies to the game. But the game setting may be only allowing a certain number of these Zombie objects for example based on the level of the game. If the level is increased for example, the setting of the game can change to allow creation of more Zombie objects.
+
+The UML is very simple and cannot tell the full story, the code is better to follow the concept.
+
+<img src="media/Factory_Method.PNG" width="450" height="510" />
