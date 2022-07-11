@@ -29,3 +29,15 @@ Template T is used in this solution so that the method can be applied to other p
 Proxy pattern is used when for example creating an object could be computationally or memory expensive. Or when permission cannot be directly granted to an object and first need some authentication. In this example, a data_generator for Fibonacci series is created through the proxy and user contact that only through the proxy. The proxy has an Fibonacci data_generator. Both proxy and concrete object of Fibonacci are extended from the same data_generator abstract class.
 
 <img src="media/Proxy_Pattern.PNG" width="400" height="250" />
+
+## Example of Design Pattern
+Command pattern encapsulates the methods that are executed on an object and is useful for doing a series of operation and wanting to list them and be able to track back and undo them if needed.
+In UML is shown below. In this example: 
+- The invoker is a controller with four buttons to control up, left, down, and right movements of a robot. 
+- The receiver is the robot that we want to control with the controller. 
+- Using an abstract class, named Commands in the code, we create 4 different methods and their respective Undo's that move the robot object in the 4 directions. All these concrete Commands have the same robot object that has been passed to them in their constructor and all act on this same object. 
+- The controller object maintains a stack of previously executed Commands. When the Undo() method of the controller is called, it picks up the last executed Command and calls its Undo() method.
+
+<img src="media/Command_Pattern.PNG" width="400" height="250" />
+
+
