@@ -38,7 +38,7 @@ In UML is shown below. In this example:
 - Using an abstract class, named Commands in the code, we create 4 different methods and their respective Undo's that move the robot object in the 4 directions. All these concrete Commands have the same robot object that has been passed to them in their constructor and all act on this same object. 
 - The controller object maintains a stack of previously executed Commands. When the Undo() method of the controller is called, it picks up the last executed Command and calls its Undo() method.
 
-Example of executed code is shown as comment at the end of the java file.
+Result from executing the code is shown as comment at the end of the java file.
 
 <img src="media/Command_Pattern.PNG" width="450" height="270" />
 
@@ -49,14 +49,14 @@ For this example a simple Robot with two buttons and four states is implemented 
 - The robot has three methods one for the action that depends on its state. So it has a IState that is initialized when the object is created.
 - The robot has two methods for each of the buttons that set the new state depending on the current state. 
 
-These three methods are all implemented in concrete classes of the states.
+These three methods are all implemented in concrete classes of the states. The result of the executed code is shown as comment at the end of the java file.
 
 <img src="media/State_Pattern.PNG" width="450" height="510" />
 
 ## Example of Factory Method
 Factory Patterns (Factory Method and Abstract Factory Pattern) is used to control the creation of objects. For example if we want to simply count how many of an object is created or if we want to have some statistic of properties of the objects created or we want to store them somewhere. Sometimes also it may be difficult to directly create them.
 
-In this simple example, in a game there are Zombie objects that need to be created. For example a user may call new zombies to the game. But the game setting may be only allowing a certain number of these Zombie objects for example based on the level of the game. If the level is increased for example, the setting of the game can change to allow creation of more Zombie objects.
+In this simple example, in a game there are Zombie objects that need to be created. For example a user may call new zombies to the game. But the game setting may be only allowing a certain number of these Zombie objects for example based on the level of the game. If the level is increased for example, the setting of the game can change to allow creation of more Zombie objects. The result of the executed code is shown as comment at the end of the java file.
 
 The UML is very simple and cannot tell the full story, the code is better to follow the concept.
 
