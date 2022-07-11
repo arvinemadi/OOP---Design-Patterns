@@ -51,5 +51,5 @@ For this example a simple Robot with two buttons and four states is implemented 
 
 These three methods are all implemented in concrete classes of the states.
 
-<img src="media/State_Pattern.PNG" width="750" height="270" />
+<img src="media/State_Pattern.PNG" width="450" height="550" />
 
