@@ -38,6 +38,6 @@ In UML is shown below. In this example:
 - Using an abstract class, named Commands in the code, we create 4 different methods and their respective Undo's that move the robot object in the 4 directions. All these concrete Commands have the same robot object that has been passed to them in their constructor and all act on this same object. 
 - The controller object maintains a stack of previously executed Commands. When the Undo() method of the controller is called, it picks up the last executed Command and calls its Undo() method.
 
-<img src="media/Command_Pattern.PNG" width="450" height="300" />
+<img src="media/Command_Pattern.PNG" width="450" height="270" />
 
 
