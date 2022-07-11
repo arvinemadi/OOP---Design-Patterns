@@ -42,4 +42,14 @@ Example of executed code is shown as comment at the end of the java file.
 
 <img src="media/Command_Pattern.PNG" width="450" height="270" />
 
+## Example of State Pattern
+State pattern is very useful to avoid a lot of 'if' statements when the object can have different states and controls to change those states. This makes the code much more flexible in case of complex state diagrams and debugging much more easier.
+For this example a simple Robot with two buttons and four states is implemented using the State Pattern Concept. As the state diagram shows, the blue button moves the state of the robot one step further in the direction of Sit->Stand->Walk->Run, if the robot is already running the blue button has no effect. The green button takes the state of the robot one step backward from Run->Walk->Stand->Sit, and if it is sitting it has no effect. This is just a simple example that could become more complicated, for example we can think about a button that makes the robot to jump but it only works if the robot is running.
+
+- The robot has three methods one for the action that depends on its state. So it has a IState that is initialized when the object is created.
+- The robot has two methods for each of the buttons that set the new state depending on the current state. 
+
+These three methods are all implemented in concrete classes of the states.
+
+<img src="media/State_Pattern.PNG" width="750" height="270" />
 
