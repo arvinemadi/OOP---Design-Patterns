@@ -60,4 +60,4 @@ In this simple example, in a game there are Zombie objects that need to be creat
 
 The UML is very simple and cannot tell the full story, the code is better to follow the concept.
 
-<img src="media/Factory_Method.PNG" width="450" height="510" />
+<img src="media/Factory_Method.PNG" width="450" height="270" />
