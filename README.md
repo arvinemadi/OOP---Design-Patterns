@@ -61,3 +61,5 @@ In this simple example, in a game there are Zombie objects that need to be creat
 The UML is very simple and cannot tell the full story, the code is better to follow the concept.
 
 <img src="media/Factory_Method.PNG" width="450" height="270" />
+
+[Wine Dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html) that is used in an earlier notebook to demo the XGBoot feature importance, is used to train and deploy a XGBoost endpoint. Then a Clarify endpoint using SHAP algorithm is deployed. The notebook has more explanation on to initialize and set the monitors.
